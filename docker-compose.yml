@@ -1,6 +1,6 @@
 version: "3"
 services:
-      angular_app:
+      app:
             container_name: angularApp
             restart: always
             build: .
