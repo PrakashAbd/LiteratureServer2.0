@@ -1,14 +1,14 @@
 version: "3"
 services:
-      Angular_app:
+      angular_app:
             container_name: angularApp
             restart: always
             build: .
             ports: 
                 - "8081:8081"
             links:
-              - MongoDB
-      MongoDB:
+              - mongoDB
+      mongoDB:
             container_name: myDB
             image: "mongo:latest"
             volumes:
